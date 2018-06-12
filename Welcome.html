@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="Css.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Circle Welcome Page</title> 
+	</head>
+	<body>
+		<div id="logoContainer">
+			<header role = "banner"> 
+			 <img src="Capture.png" id="circleLogo">
+			</header>
+			<button onclick="document.getElementById('id01').style.display='block'" style="width:80%;margin-left: 35px;margin-top: 70px;">Login</button>
+			<button onclick="document.getElementById('id02').style.display='block'" style="width:80%;margin-left: 35px;margin-top: 20px;">Sign Up</button>
+		</div>
+		<div id="id01" class="popup">
+		  
+		  <form class="modal-content animate" action="/action_page.php">
+			<div class="imgcontainer">
+			  <img src="UserLogo.jpg" alt="Avatar" class="image">
+			</div>
+			<div class="container">
+			  <label for="uname"><b>Username</b></label>
+			  <input type="text" placeholder="Enter Username" name="uname" required>
+
+			  <label for="psw"><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+				
+			  <button type="submit">Logins</button>
+			  <label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			  </label>
+			</div>
+			<div class="container" style="background-color:#f1f1f1">
+			  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			  <span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+		  </form>
+		</div>
+		
+		<div id="id02" class="popup1">
+		  
+		  <form class="modal-content animate" action="/action_page.php">
+			<div class="imgcontainer">
+			  <img src="UserLogo.jpg" alt="Avatar" class="image">
+			</div>
+
+			<div class="container">
+			  <label for="uname"><b>Username</b></label>
+			  <input type="text" placeholder="Enter Username" name="uname" required>
+			  
+			  <label for="mailId"><b>E-mail Id</b></label>
+			  <input type="text" placeholder="Enter Email-Id" name="mailId" required>
+			  
+			  <label for="ph-Number"><b>Mobile Number</b></label>
+			  <input type="number" placeholder="Enter Mobile Number" name="ph-Number" required>
+			  
+			  <input type="radio" name="gender" value="male" checked> Male<br>
+			  <input type="radio" name="gender" value="female"> Female<br>
+			  <input type="radio" name="gender" value="other"> Other<br>
+			
+			  <label for="psw"><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+			  
+			  <label for="re-psw"><b>Password</b></label>
+			  <input type="password" placeholder="Re-Enter Password" name="re-psw" required>
+				
+			  <button type="submit">Sign Up</button>
+			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+			  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			  <button type="button" onclick="" class="resestbtn">Reset</button>
+			</div>
+		  </form>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
